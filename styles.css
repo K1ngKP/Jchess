@@ -1,0 +1,104 @@
+#FenInDiv {
+	position: relative;
+	left: 60px;
+}
+
+#fenIn { 
+ width: 480px;
+ left: 60px;
+}
+
+#Board {
+	position: relative;
+	top: 20px;
+	left: 80px;
+	width: 640px;
+	height: 640px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+#EngineOutput {
+	position: absolute;
+	left: 800px;
+	top: 250px;	
+}
+
+.Square {
+	position: absolute;	
+	width: 80px;
+	height: 80px;
+}
+
+.Dark {
+	background-color:#19ab4c;
+}
+
+.Light {
+	background-color:#f0f5f6;
+}
+
+.SqSelected {
+	background-color:#36899e;
+}
+
+.rank1 { top: 560px; }
+.rank2 { top: 480px; }
+.rank3 { top: 400px; }
+.rank4 { top: 320px; }
+.rank5 { top: 240px; }
+.rank6 { top: 160px; }
+.rank7 { top: 80px; }
+.rank8 { top: 0px; }
+
+.file1 { left: 0px; }
+.file2 { left: 80px; }
+.file3 { left: 160px; }
+.file4 { left: 240px; }
+.file5 { left: 320px; }
+.file6 { left: 400px; }
+.file7 { left: 480px; }
+.file8 { left: 560px; }
+
+.Piece {
+	position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
