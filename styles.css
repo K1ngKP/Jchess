@@ -1,17 +1,46 @@
+ body{
+	overflow-x: hidden;
+	margin: 0;
+  font: 300 11px/1.4 'Helvetica Neue', sans-serif;
+  color: #fff ;
+  font-size: 14px;
+  background-color: #25274d;
+}
+
+#GameStatus{
+	width: 200px;
+	height: 30px;
+	border: 2px;
+	border-color: black;
+}
+
+select{
+	width: 50px;
+	height: 20px;
+}
+
 #FenInDiv {
-	position: relative;
-	left: 60px;
+	position: absolute;
+	top: 80px;
+	left: 750px;
 }
 
 #fenIn { 
+	border: 0;
+	border-radius: 15px;
+	padding-left: 20px;
+	font-size: 16px;
  width: 480px;
+ height: 30px;
  left: 60px;
 }
 
+/* Board related work Starts here */
 #Board {
-	position: relative;
-	top: 20px;
+	position: absolute;
+	top: 80px;
 	left: 80px;
+	border: 1px solid #f64c72;
 	width: 640px;
 	height: 640px;
 	border-style: solid;
@@ -31,11 +60,11 @@
 }
 
 .Dark {
-	background-color:#19ab4c;
+	background-color:#0074e1;
 }
 
 .Light {
-	background-color:#f0f5f6;
+	background-color:#6cdaee;
 }
 
 .SqSelected {
@@ -64,39 +93,86 @@
 	position: absolute;
 }
 
+/* Board realated work ends here */
+
+
+/* Buttons start here */
+
+button{
+	border: 2px;
+	width: 120px;
+	height: 30px;
+	border-radius: 15px;
+	border-width: 2px;
+	border-color: #2e9cca;
+	color: #2e9cca;
+	background-color: #25274d;
+	
+        font-size: 12px;
+		
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-family: 'Helvetica Neue';
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid #2e9cca;
+        margin-top: 5px;
+        cursor: pointer;
+        animation: fadeInAnimation 1s 1.8s backwards;
+        white-space: nowrap;
+		justify-content: center;
+		align-items: center;
+		&:hover {
+			background: #2e9cca;
+			color: #fff;
+			font-size: 15px;
+		  }
+
+}
 
 
 
+/* buttons end here */
 
 
+/* Navbar Starts here */
+
+#nav-bar{
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 60px;
+	
+	position: absolute;
+	top: 0px;
+	background-color: #1e2041;
+	
+}
+
+/* Navbar ends here */
 
 
+/* text-zone */
 
+#text-zone{
+	vertical-align: center;
+	align-items: center;
+	text-align: center;
+	justify-items: center;
+	justify-content: space-around;
+	width: 320px;
+	height: 155px;
+	margin-bottom: 15px;
+	background-color: #464866;
+	font-size: 15px;
+	color: #2e9cca;
+	border-radius: 15px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#Generating-info{
+	color: white;
+}
 
 
 

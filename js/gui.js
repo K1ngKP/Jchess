@@ -3,6 +3,9 @@ $("#SetFen").click(function () {
 	NewGame(fenStr);
 });
 
+$.fn.colorText = function(color, text) {
+    return this.css( "color", color ).text(text);
+};
 
 $('#TakeButton').click( function () {
 	if(GameBoard.hisPly > 0) {
@@ -274,11 +277,22 @@ function CheckResult() {
 	if(InCheck == BOOL.TRUE) {
 		if(GameBoard.side == COLOURS.WHITE) {
 			
-	      $("#GameStatus").text("GAME OVER black mates (0 - 1)");
+	      $("#GameStatus").css({
+			color : "white",
+			
+			"font-size" : "15px"
+		  }).text("GAME OVER BLACK WINS");
+		  alert("CHECKMATE IN 1");
 	      return BOOL.TRUE;
 			
         } else {
-	      $("#GameStatus").text("GAME OVER {white mates}");
+			
+	      $("#GameStatus").css({
+			color : "white",
+			
+			"font-size" : "15px"
+		  }).text("GAME OVER WHITE WINS");
+		  alert("CHECKMATE IN 1");
 	      return BOOL.TRUE;
         }
 	} else {
@@ -308,6 +322,19 @@ $('#SearchButton').click( function () {
 	GameController.PlayerSide = GameController.side ^ 1;
 	PreSearch();
 });
+
+
+$('#resButton').click( function () {	
+	if(GameBoard.side==COLOURS.WHITE)
+	{
+		alert("WHITE RESIGNS");
+	}
+	else{
+		alert("BLACK RESIGNS");
+	}
+	NewGame(START_FEN);
+});
+
 
 function StartSearch() {
 
